@@ -15,13 +15,13 @@
         "inference"
       ],
       "short_description": "A DA for a vLLM inference cluster",
-      "long_description": "A DA for a vLLM inference cluster..",
+      "long_description": "A DA for a vLLM inference cluster.",
       "offering_docs_url": "https://github.com/gee4vee/vllm-inference-cluster/raw/0.0.1a/README.md",
       "support_details": "This is a demonstration and no official support is given.",
       "flavors": [
         {
-          "label": "Standard",
-          "name": "standard-da",
+          "label": "Inference Cluster",
+          "name": "inference-cluster-da",
           "install_type": "fullstack",
           "working_directory": "./",
           "licenses": [
@@ -45,6 +45,36 @@
                   }
                 },
                 "description": "A DA for a vLLM inference cluster."
+              }
+            ]
+          }
+        },
+        {
+          "label": "LibreChat",
+          "name": "librechat-da",
+          "install_type": "fullstack",
+          "working_directory": "./extra/librechat",
+          "licenses": [
+            {
+              "name": "Apache License 2.0",
+              "url": "https://github.com/gee4vee/vllm-inference-cluster/raw/0.0.1a/LICENSE"
+            }
+          ],
+          "configuration": [],
+          "outputs": [],
+          "iam_permissions": [],
+          "release_notes_url": "https://github.com/gee4vee/vllm-inference-cluster/raw/0.0.1a/CHANGELOG.md",
+          "architecture": {
+            "diagrams": [
+              {
+                "diagram": {
+                  "caption": "Architecture diagram",
+                  "metadata": [],
+                  "url_proxy": {
+                    "url": "https://github.com/gee4vee/vllm-inference-cluster/raw/0.0.1a/doc/materials/vlm-example-arch-diagram.png"
+                  }
+                },
+                "description": "A DA for a LibreChat connecting to a vLLM Inference Cluster DA deployment."
               }
             ]
           }
