@@ -4,7 +4,7 @@
       "name": "vllm-inference-cluster",
       "label": "vLLM Inference Cluster",
       "product_kind": "solution",
-      "version": "0.0.1a",
+      "version": "0.0.1-alpha",
       "tags": [
         "network_vpc",
         "Technology"
