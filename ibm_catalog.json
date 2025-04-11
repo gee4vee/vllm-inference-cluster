@@ -23,7 +23,7 @@
           "label": "Inference Cluster",
           "name": "inference-cluster-da",
           "install_type": "fullstack",
-          "terraform_version": "1.7.0",
+          "terraform_version": "1.9.0",
           "working_directory": "./",
           "licenses": [
             {
@@ -135,7 +135,7 @@
           "label": "LibreChat",
           "name": "librechat-da",
           "install_type": "fullstack",
-          "terraform_version": "1.7.0",
+          "terraform_version": "1.9.0",
           "working_directory": "./extra/librechat",
           "licenses": [
             {
