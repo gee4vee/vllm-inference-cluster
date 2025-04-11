@@ -30,8 +30,91 @@
               "url": "https://github.com/gee4vee/vllm-inference-cluster/raw/0.0.1a/LICENSE"
             }
           ],
-          "configuration": [],
-          "outputs": [],
+          "configuration": [
+            {
+              "key": "data_volume_capacity",
+              "required": false,
+              "default_value": 100
+            },
+            {
+              "key": "data_volume_profile",
+              "required": false,
+              "default_value": "general-purpose"
+            },
+            {
+              "key": "ibmcloud_api_key",
+              "required": true
+            },
+            {
+              "key": "ibmcloud_region",
+              "required": true,
+              "default_value": "__NOT_SET__"
+            },
+            {
+              "key": "inference_node_base_image_name",
+              "required": false,
+              "default_value": "ibm-ubuntu-24-04-6-minimal-amd64-1"
+            },
+            {
+              "key": "inference_node_count",
+              "required": false,
+              "default_value": 3
+            },
+            {
+              "key": "inference_node_instance_profile",
+              "required": false,
+              "default_value": "gx3-24x120x1l40s"
+            },
+            {
+              "key": "inference_node_ssh_key_name",
+              "required": false
+            },
+            {
+              "key": "load_balancer_port",
+              "required": false,
+              "default_value": "8080"
+            },
+            {
+              "key": "load_balancer_type",
+              "required": false,
+              "default_value": "private"
+            },
+            {
+              "key": "model_cos_bucket_name",
+              "required": false
+            },
+            {
+              "key": "model_huggingface_name",
+              "required": false,
+              "default_value": "ibm-granite/granite-3.1-2b-instruct"
+            },
+            {
+              "key": "prefix",
+              "required": false,
+              "default_value": "inference-cluster"
+            },
+            {
+              "key": "resource_group_name",
+              "required": false,
+              "default_value": "Default"
+            },
+            {
+              "key": "subnets",
+              "required": false,
+              "default_value": "{\n    zone-1 = [{\n      name = \"subnet-inference-1\"\n      cidr = \"10.10.10.0/24\"\n    }],\n    zone-2 = [{\n      name = \"subnet-inference-2\"\n      cidr = \"10.20.10.0/24\"\n    }],\n    zone-3 = [{\n      name = \"subnet-inference-3\"\n      cidr = \"10.30.10.0/24\"\n    }],\n  }"
+            },
+            {
+              "key": "vllm_serve_options",
+              "required": false,
+              "default_value": "{\n    # \"dtype\"             = \"half\",           # Use for V100 profiles\n    \"max-model-len\"     = 8192,\n    \"served-model-name\" = \"cluster-model\"\n  }"
+            }
+          ],
+          "outputs": [
+            {
+              "key": "openai_endpoint_base_url",
+              "description": "This is the public endpoint of the application load balancer"
+            }
+          ],
           "iam_permissions": [],
           "release_notes_url": "https://github.com/gee4vee/vllm-inference-cluster/raw/0.0.1a/CHANGELOG.md",
           "architecture": {
