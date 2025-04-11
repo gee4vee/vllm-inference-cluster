@@ -23,7 +23,7 @@ data "ibm_is_image" "inference" {
 
 module "vpc" {
   source            = "terraform-ibm-modules/landing-zone-vpc/ibm"
-  version           = "7.17.1"
+  version           = "7.20.2"
   resource_group_id = data.ibm_resource_group.group.id
   region            = var.ibmcloud_region
   name              = var.prefix
