@@ -49,7 +49,7 @@
             {
               "key": "ibmcloud_region",
               "required": true,
-              "default_value": "us-south"
+              "default_value": "__NOT_SET__"
             },
             {
               "key": "inference_node_base_image_name",
